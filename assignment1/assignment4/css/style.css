@@ -1,0 +1,154 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+body {
+    font-family: "Signika Negative";
+    color: #f7984f;	
+    background:#ffe5d1; 
+}
+
+
+div#container {
+    width: 900px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 200px;
+}
+
+span.header{
+    position: absolute;
+    left: 150px;  
+    top: 150px;
+    color: #944001;
+}
+
+span.mark{
+    font-size: 300px;
+    position: absolute;
+    top: 500px;
+    left: 50px;
+    color: #ff7b17;
+}
+
+span.youre{
+    font-size: 100px;
+    position: absolute;
+    top: 450px;
+    left: 200px;    
+}
+
+span.braver{
+    font-size: 200px;
+    position: absolute;
+    top: 450px;
+    left: 485px; 
+    color: #fc6f03;
+    text-shadow: 30px 30px 10px  #ad652f;
+    
+}
+
+span.next{
+    font-size: 120px;
+    position: absolute;
+    top: 600px;
+    left: 604px; 
+    
+}
+
+span.believe{
+    font-size: 200px;
+    position: absolute;
+    rotate:-90deg;
+    top: 310px;
+    left: 850px;
+    color: #ad652f;
+    text-shadow: 30px 50px 10px #f7984f;
+}
+    
+span.stronger{
+    font-size: 100px;
+    position: absolute;
+    top: 100px;
+    left: 1300px; 
+    color: #de6102;
+} 
+   
+span.you{
+    font-size: 50px;
+    position: absolute;
+    top: 200px;
+    left: 1400px;   
+    text-shadow: 30px 50px 10px #fc6f03;
+} 
+
+span.seem{
+    font-size: 275px;
+    position: absolute;
+    top: 575px;
+    left: 1300px;
+    rotate:90deg;
+    color: #db7121;
+}
+  
+span.smarter{
+    font-size: 100px;
+    position: absolute;
+    top: 850px;
+    left:975px; 
+    rotate:180deg;
+    color: #ffb57d;
+    text-shadow: 30px 30px 20px #f7984f;
+}
+
+span.than{
+    font-size: 30px;
+    position: absolute;
+    top: 775px;
+    left:900px; 
+    rotate:-90deg; 
+}
+
+
+span.think{
+    font-size: 100px;
+    position: absolute;
+    top: 750px;
+    left:1000px; 
+    color: #8c420a;
+}
+span.endmark{
+  font-size: 500px;
+  position: absolute;
+  top:625px;
+  left:1200px;
+  color: #ff7b17;
+}
+        
+span.attribution{
+    font-size: 30px;
+    position: absolute;
+    top:750px;
+    left: 300px; 
+    color: #db7121;
+    text-shadow: 30px 10px 10px #8c420a;
+}
+
+span.footer{
+    font-size: 20px;
+    position: absolute;
+    top: 850px;
+    left: 150px;    
+}
+
+
