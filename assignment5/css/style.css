@@ -1,0 +1,259 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+
+body {
+background:black;
+	
+}
+
+
+div#container {
+    border: 1px solid black;
+    width: 900px;
+    height: 900px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 20%, rgba(38,0,255,1) 43%, rgba(136,54,236,1) 78%, rgba(12,0,255,1) 90%, rgba(0,104,255,1) 94%);   
+}
+
+div#space-invader {
+      box-shadow: 0 0 0 1em green,
+      0 1em 0 1em green,
+      -2.5em 1.5em 0 .5em green,
+      2.5em 1.5em 0 .5em green,
+      -3em -3em 0 0 green,
+      3em -3em 0 0 green,
+      -2em -2em 0 0 green,
+      2em -2em 0 0 green,
+      -3em -1em 0 0 green,
+      -2em -1em 0 0 green,
+      2em -1em 0 0 green,
+      3em -1em 0 0 green,
+      -4em 0 0 0 green,
+      -3em 0 0 0 green,
+      3em 0 0 0 green,
+      4em 0 0 0 green,
+      -5em 1em 0 0 green,
+      -4em 1em 0 0 green,
+      4em 1em 0 0 green,
+      5em 1em 0 0 green,
+      -5em 2em 0 0 green,
+      5em 2em 0 0 green,
+      -5em 3em 0 0 green,
+      -3em 3em 0 0 green,
+      3em 3em 0 0 green,
+      5em 3em 0 0 green,
+      -2em 4em 0 0 green,
+      -1em 4em 0 0 green,
+      1em 4em 0 0 green,
+      2em 4em 0 0 green;
+      background: green;
+      width: 1em;
+      height: 1em;
+      overflow: hidden;
+      margin: 50px 0 70px 65px;
+      position: absolute;
+      right: 700px;
+      bottom: 100px;  
+    }
+
+div#space-invader:hover{
+transform: rotate(720deg);
+transition: all 3s;
+}
+
+div#space-invader1 {
+      box-shadow: 0 0 0 1em magenta,
+      0 1em 0 1em magenta,
+      -2.5em 1.5em 0 .5em magenta,
+      2.5em 1.5em 0 .5em magenta,
+      -3em -3em 0 0 magenta,
+      3em -3em 0 0 magenta,
+      -2em -2em 0 0 magenta,
+      2em -2em 0 0 magenta,
+      -3em -1em 0 0 magenta,
+      -2em -1em 0 0 magenta,
+      2em -1em 0 0 magenta,
+      3em -1em 0 0 magenta,
+      -4em 0 0 0 magenta,
+      -3em 0 0 0 magenta,
+      3em 0 0 0 magenta,
+      4em 0 0 0 magenta,
+      -5em 1em 0 0 magenta,
+      -4em 1em 0 0 magenta,
+      4em 1em 0 0 magenta,
+      5em 1em 0 0 magenta,
+      -5em 2em 0 0 magenta,
+      5em 2em 0 0 magenta,
+      -5em 3em 0 0 magenta,
+      -3em 3em 0 0 magenta,
+      3em 3em 0 0 magenta,
+      5em 3em 0 0 magenta,
+      -2em 4em 0 0 magenta,
+      -1em 4em 0 0 magenta,
+      1em 4em 0 0 magenta,
+      2em 4em 0 0 magenta;
+      background: magenta;
+      width: 1em;
+      height: 1em;
+      overflow: hidden;
+      margin: 50px 0 70px 65px;
+      position: absolute; 
+      bottom: 500px; 
+      right: 1100px;
+    }
+
+div#space-invader1:hover{
+transform: rotate(90deg);
+transition: all 1s;
+}
+    
+
+div#space-invader3 {
+     box-shadow: 0 0 0 1em red,
+      0 1em 0 1em red,
+      -2.5em 1.5em 0 .5em red,
+      2.5em 1.5em 0 .5em red,
+      -3em -3em 0 0 red,
+      3em -3em 0 0 red,
+      -2em -2em 0 0 red,
+      2em -2em 0 0 red,
+      -3em -1em 0 0 red,
+      -2em -1em 0 0 red,
+      2em -1em 0 0 red,
+      3em -1em 0 0 red,
+      -4em 0 0 0 red,
+      -3em 0 0 0 red,
+      3em 0 0 0 red,
+      4em 0 0 0 red,
+      -5em 1em 0 0 red,
+      -4em 1em 0 0 red,
+      4em 1em 0 0 red,
+      5em 1em 0 0 red,
+      -5em 2em 0 0 red,
+      5em 2em 0 0 red,
+      -5em 3em 0 0 red,
+      -3em 3em 0 0 red,
+      3em 3em 0 0 red,
+      5em 3em 0 0 red,
+      -2em 4em 0 0 red,
+      -1em 4em 0 0 red,
+      1em 4em 0 0 red,
+      2em 4em 0 0 red;
+      background: red;
+      width: 1em;
+      height: 1em;
+      overflow: hidden;
+      margin: 50px 0 70px 65px;
+      position: absolute; 
+      bottom: 650px; 
+      right: 600px;
+    }
+
+div#space-invader3:hover{
+transform:scale(3)rotate(-90deg);
+transition: all 1s;
+}
+
+div#rectangle {
+  width: 100px;
+  height: 100px;
+  background:#d6d6d6;
+  position: absolute; 
+  bottom: 300px; 
+  right:1000px;
+  rotate: 50deg;
+}
+
+div#rectangle:hover{
+transform:translate(50px50px);
+background:red;
+transition: all 1s;
+}
+
+
+ div#triangle-up {
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 100px solid #ff6524;
+      position: absolute; 
+      bottom: 371px; 
+      right: 500px;
+      rotate: 24deg;
+    }
+
+div#triangle-up:hover{
+transform:scale(3)translate(50px50px);
+background:#ff6524;
+transition: all 1s;
+}
+
+div#trapezoid {
+      border-bottom: 100px solid #ff6524;
+      border-left: 25px solid transparent;
+      border-right: 25px solid transparent;
+      height: -2;
+      width: 100px;
+      position: absolute; 
+      bottom: 0px; 
+      right: 1095px;
+      rotate: 195deg;
+    }
+
+div#trapezoid:hover{
+transform: scale(3) rotate(-360deg);
+transition: all 3s;
+}
+
+
+
+div#triangle-bottomleft {
+      width: 0;
+      height: 0;
+      border-bottom: 100px solid red;
+      border-right: 100px solid transparent;
+      position: absolute; 
+      bottom:700px; 
+      right:1200px;
+      rotate: -25deg;
+    }
+  
+  
+div#triangle-bottomleft:hover{
+transform: rotate(720deg);
+transition: all 3s;
+}
+
+
+div#circle {
+  width: 100px;
+  height: 100px;
+  background: black;
+  border-radius: 50%;
+  position: absolute; 
+  bottom:350px; 
+  right:800px;
+}
+  
+div#circle:hover{
+transform: scale(100) rotate(-360deg);
+transition: all 3s;
+}
+  
