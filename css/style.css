@@ -27,6 +27,8 @@ div#container {
     margin-top: 50px;
     background:#F6F6F2;
     padding: 20px;
+    
+}
 
 
 #container {
@@ -69,3 +71,16 @@ nav a:hover {
 
 
 }
+    
+  
+
+
+/* Minimum width for desktop screens. */
+@media all and (min-width: 1024px) {
+ 
+    
+#container{
+        width:650px;
+    }
+
+} /* closes 1024px+ */
