@@ -1,0 +1,173 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+/* Mobile First CSS: we'll design for phone sizes first, then add media queries for larger screens later */
+
+body {
+    background:#520202;
+    color: white;
+    font-family:'Signika Negative', sans-serif;	
+}
+
+
+#container {
+    
+	
+}
+
+
+h1 {
+    
+    font-family: Orbitron, sans-serif;
+    font-size: 3em;
+    line-height: 1.25em;
+}
+
+
+header,footer{
+    
+    background:black;
+    color:  white;
+    padding: 1em;
+}
+
+section{
+    
+   border: 1px solid black;
+   padding: 15px;
+   margin-bottom: 2em;
+}
+
+
+section header {
+    background:none;
+    color: white;
+}
+
+
+section h1{
+    
+    font-size: 1.5em;
+}
+
+section#myPerspective{
+    background:#730202;
+}
+
+.mobile {
+ display: 
+    
+}
+
+.desktop{ 
+display: none;
+}
+
+
+
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+
+
+/* Minimum width for laptops. */
+@media all and (min-width: 769px) {
+	
+    body{
+        background: white
+            url(../img/balloons.jpg) no-repeat fixed center; 
+        background-size: cover;
+    }
+    
+    
+    section#authorSection{
+        background: rgba(0,0,0,0.5);
+        color:white;
+    }
+    
+    
+    section#authorSection h1{
+        color:white; 
+        
+
+    }
+    
+    #container{
+        width: 725px;
+        margin: auto;
+    }
+	
+    header, footer {
+        background: none; 
+    }
+    
+    
+    #container> header h1 {
+        color: white;
+        text-align: center;
+    }  
+    
+    footer{
+        color: white;
+        text-align: right;
+        
+    }
+    
+    
+	
+} /* closes 769px+ */
+
+
+
+
+/* Minimum width for desktop screens. */
+@media all and (min-width: 1024px) {
+	
+    #container{
+        width: 1000px;
+    }
+    
+    section#authorSection {
+        float: left;
+        width: 40%;
+    }
+    
+    section#myPerspective{
+        float: right;
+        width:40%;
+    }
+    
+    footer{
+        clear: both;
+    }
+    
+    
+.mobile {
+ display: none;
+    
+}
+
+.desktop{ 
+display: block;
+}
+	
+	
+} /* closes 1024px+ */
+
+
+
