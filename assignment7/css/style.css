@@ -39,30 +39,7 @@ header {
 
 footer {
 	padding: 1em;
-}
-
-nav ul {
-	list-style:none;
-	padding-left:0px;
-}
-
-nav a {
-	display:block;
-	text-decoration:none;
-	padding:5px;
-	border:1px solid #377859;
-    color:#5188b5;
-    background:#bad4c3;
-    text-align: center;
-    border-radius: 4px;
-     
-}
-
-
-nav a:hover { 
-    background: #C2EDCE; 
-
-
+    
 }
 
 
@@ -82,24 +59,20 @@ section {
 	padding:1em;
 }
 
-
-
 figure.responsive {
     position: relative;
     padding-bottom: 56.25%;  /* 16:9 */
     height: 0px;
     overflow: hidden;
     max-width: 100%;
+    background: #4a8251;
 }
 
 figure.responsive iframe {
     position: absolute;
     top: 0px;
     left: 0px;
-    width: 100%;
-    height: 100%;
 }
-
 
 
 
@@ -114,22 +87,14 @@ You can adjust the min-width numbers below, and add as many new media queries as
 /* Minimum width for laptops. */
 @media all and (min-width: 769px) {
 	
-    main {
-        display:flex;
-    }
-    
-    figure, section {
-        flex: 1 1 50%;
-    }
-    
-    nav ul {
-        display:flex;
-    } 
-    
-    nav li {
-        flex: 1 0 auto;
-    }
-    
+main{
+    display: flex;
+}
+
+figure,section,figure.responsive{
+    flex: 1 1 50%;
+}
+
 
 
 	
