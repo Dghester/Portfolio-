@@ -1,0 +1,123 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+/* Mobile First CSS: we'll design for phone sizes first, then add media queries for larger screens later */
+
+
+body {
+    font-family:monospace; 
+    background: white;  
+    color: black;
+    padding: 1em;
+    text-align: center;
+}
+
+h1.h2 {
+    
+    font-family: monospace;
+    font-size: 1em;
+    line-height: 1.25em;  
+    text-align: center;
+}
+
+header,footer{
+    background: black;
+    color: white;
+    padding: 2em;
+    text-align: center;
+}
+
+section{
+    padding: 15px;
+    margin-bottom: 2em;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+
+
+/* Minimum width for laptops. */
+@media all and (min-width: 769px) {
+    
+  body {
+    font-family:monospace; 
+    background: #c2c0c0;  
+    color: black;
+    padding: 3em;
+    text-align: center;
+    margin: 2em;
+}
+    
+ #container{ 
+        background: white;
+        width: 725px;
+        margin: auto;
+        align-content: center;
+        margin-top: 10em;
+        border: 1px solid black;
+    }
+
+h1.h2 {
+    
+    font-family: monospace;
+    font-size: 1em;
+    line-height: 1.25em;  
+    text-align: center;
+}
+
+header,footer{
+    background: black;
+    color: white;
+    padding: 2em;
+    text-align: center;
+}
+
+section{
+    padding: 3em;
+    text-align: center;
+    overflow: hidden;
+    margin: 2em;
+}
+    
+
+    
+    
+    
+    
+    
+     /* closes 769px+ */
+
+/* Minimum width for desktop screens. */
+    @media all and (min-width: 1024px) {
+        
+        #container{
+        width: 1000px;
+    }
+    
+  
+    
+        
+        
+        
+        
+        
+        
+        
+  
+    } /* closes 1024px+ */

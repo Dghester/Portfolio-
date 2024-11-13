@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<meta charset="utf-8">
+	
+	<title>Assignment 8</title>
+	
+	<link rel="stylesheet" href="css/style.css">	
+	
+    
+    
+</head>
+      <body>
+           <div id="container">
+               
+               
+<header> 
+<h1>Growing Up in Chicago </h1>
+<h2>By: Danielle Hester</h2>
+</header>
+               
+               
+               
+
+<main>
+    
+<p>Highschool was a truly a time where I was allowed to shine in so many different areas. From track to my number of different art classes, I had won a lot of different awards. However, it was one opportunity in particular that I really wanted to get my hands on — the Cheryl Burton Scholarship. This was not only going to benefit me in the long run with helping me pay for college, but also gave me the opportunity to be recogonized by a famous news anchor. After winnin the scholarship, I wrote a little journal about how I felt during  that moment and other moments where I was recoginized. </p>
+    
+    
+<button class="read">Read Excerpt</button>
+    
+<section>
+<p class="special">
+Growing up in Chicago all you hear about is struggle. Everybody had to struggle to get to where they are in life. More specifically, the struggle I have heard about the most in Chicago is the struggle of living out there on the streets — constantly, fearing for your life. Gun violence, gang violence, drug wars, police brutality is Chicago’s struggle. Not having food on the table, parents not present, pregnancies at 16, dropping out of highschool is Chicago’s struggle. Now being recognized as an honored young artist and leader from Chicago means that I have overcame and grew past so many of those challenges. I have made a change to what growing up in Chicago really means for me. I feel as though this is just the first step. Now, I need to take a bigger leap. I need to take my leadership and make an impact on others who are going through the struggles that Chicago may be bringing to them. To help them see the light just like I have and give them hope. Overall pushing them to do something they love that uplifts them out of those life challenges into something great. 
+I would like to thank my parents for always pushing me to “Pursue my purpose”. I would like to thank Ms. Saunders, Mr. Smith and all others throughout my life who have pushed me and inspired me to be the artist and leader I am today. Without that support I would have given up.To all those around me. I know times are really tough right now, but this challenge is going to make you stronger. “Do not lose hope, please believe that there are a thousand beautiful things waiting for you. Sunshine comes to all who feel rain. -R.M. Drake. “ 
+Keep pushing for that self confidence within because that self confidence is going to help push you further than you have ever been before.     
+
+<button class="video">Watch Video</button>
+</p>
+    </section>
+    
+<figure class="responsive">
+       <iframe width="420" height="315" src="https://www.youtube.com/embed/E_umufU397E?si=YJk5_gFnLXOcVv_t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<button class="photo">Graduation Photo</button>
+</figure>
+    
+<figure class="photo"><img src="img/Me.jpg" alt="Danielle's Graduation Photo"></figure>
+    
+</main>            
+<footer>
+    <p>&#169; Danielle Hester, 2024</p>
+                                      </footer>
+
+           </div><!-- close "container" -->
+          
+
+          
+<!-- Link to jQuery on Google CDN-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  
+
+<script>
+  $(document).ready(function() {
+  $('p.special').hide();     
+  $('button.read').click(function() {
+  $('p.special').fadeIn(3000);
+
+  });//close click function
+  }); //close .ready()
+</script>
+               
+<script>
+  $(document).ready(function() {
+  $('figure.responsive').hide();     
+  $('button.video').click(function() {
+  $('figure.responsive').slideDown(3000);
+
+  });//close click function
+  }); //close .ready()
+</script>
+                   
+<script>
+  $(document).ready(function() {
+  $('figure.photo').hide();     
+  $('button.photo').click(function() {
+  $('figure.photo').slideDown(3000);
+
+  });//close click function
+  }); //close .ready()
+</script>
+
+</body>
+	
+</html> 
