@@ -1,0 +1,828 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: .95em;
+    line-height: 1.4em;
+    font-family: sans-serif;
+}
+
+footer{
+    font-size: .5em;
+    padding: 1em;
+    background:black;
+    color:white;
+}
+
+/* Mobile First CSS: we'll design for phone sizes first, then add media queries for larger screens later */
+
+    /*Home Page CSS*/
+        
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+nav{
+    height: 80px;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem calc((100ww-1300px)/2);  
+}
+
+nav a{ 
+     color:#F7F7F8;
+     text-decoration: none;
+     background: #133E87;
+     padding: 3px;
+     margin: 3px;
+     width: 100px;
+     text-align: center;
+     border-radius: 8px;
+     margin-right: 2em;
+     font-size: .75em;
+}
+
+nav a:hover { 
+    background: #608BC1; 
+}
+
+
+
+.hero{
+    background: #CBDCEB;
+}
+
+.hero-container{
+    height: 85vh;
+    padding: 0rem calc((100ww-1300px)/2);  
+}
+
+.column-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color:#608BC1;
+    padding: 4em;  
+}
+
+
+.column-left h1{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+.column-left p{
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    line-height: 1.5; 
+    color: black;
+}
+
+
+.column-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 2rem;  
+}   
+        
+.logo{
+    margin-left: 3em;
+            
+        }
+        
+.hero-image{
+            max-width: 100%;
+            height: auto;
+    
+        }
+
+        
+.intro-container{
+     background:#95acc9; 
+     height:auto;
+     width: 100%;
+     padding: 2em;
+     text-align: center;
+     font-size: 1.3em;
+     line-height: 2; 
+     color: black;
+}
+          
+.column {
+  width: 100%;
+  padding: 2em;
+  font-size: 1.3em;
+}
+
+
+        
+.button1{
+     color:#F7F7F8;
+     text-decoration: none;
+     background: #133E87;
+     padding: 5px;
+     width: 100px;
+     text-align: center;
+     border-radius: 8px;
+     cursor: pointer;
+     position:relative;
+        }
+        
+.button2{
+     color:#F7F7F8;
+     text-decoration: none;
+     background: #133E87;
+     padding: 5px;
+     width: 100px;
+     text-align: center;
+     border-radius: 8px;
+     cursor: pointer;
+     position:relative;
+     font-size:.75em;
+        }
+        
+.columnright{
+    display: flex;
+    justify-content: flex-end; 
+       
+        }   
+        
+.Video{
+    background: #CBDCEB;
+    height: 100vh;
+    }
+    
+.video-image{
+max-width:   100%;
+height: auto;
+        }
+
+figure.responsive {
+    position: relative;
+    padding-bottom: 56.25%;  /* 16:9 */
+    height: 0px;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+figure.responsive iframe {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100%;
+    height:100%;
+}
+        
+.memorial{
+    background: #CBDCEB;
+}
+
+.memorial-container{
+    height: 80vh;
+    padding: 0rem calc((100ww-1300px)/2);  
+}
+  
+.baby{
+    max-width: 100%;
+    height: auto;
+}
+        
+        
+    
+      
+                              /*About Page CSS*/      
+.about{
+    background: #133E87;
+        }
+        
+        
+.about-container{
+     color:#F7F7F8;
+     padding: 5px;
+     margin-right: 2em;
+     font-size: 3em;  
+     height: 20vh;
+     width: 100%;
+        }
+        
+ .about-container h1{
+        margin-top: 70px;
+        text-align: center;
+        }
+
+.daniel{
+         max-width: 100%;
+         height: auto;
+}
+.simpson{
+     max-width: 100%;
+     height: auto;
+}
+
+        
+ .mytabs{
+    display: flex;
+    flex-wrap: wrap;
+    max-width:2000px;
+    max-height: 2000px;
+    margin: 50px auto;
+    padding: 25px;  
+        }        
+    
+.mytabs input[type="radio"]{
+    display: none;
+        }
+        
+.mytabs label{
+    padding: 10px;
+    background:#608BC1;
+    font-weight: bold;
+        }
+        
+.mytabs .tab{
+    width: 100%;
+    padding: 20px;
+    background: #CBDCEB;
+    order: 1;
+    display: none;
+        } 
+
+.mytabs .tab h2{
+            font-size: 3em;
+            line-height: 2em;
+            text-align: center;
+        }
+.mytabs .tab p{
+         line-height: 2.5em;
+        }
+
+.mytabs input[type='radio']:checked + label + .tab{
+           display: block;
+        }
+
+.mytabs input[type='radio']:checked + label{
+         background:  #CBDCEB;   
+        }
+           
+        
+        
+                         /*Membership Page CSS*/
+        
+.membership{
+    background: #133E87;
+        }
+        
+.membership-container{
+     color:#F7F7F8;
+     padding: 5px;
+     margin-right: 2em;
+     font-size: 3em;  
+     height: 20vh;
+     width: 100%;
+        }
+        
+ .membership-container h1{
+            margin-top: 70px;
+            text-align: center;
+        }
+     
+.pricing-table{
+    background: #608BC1;
+    padding: 40px 20px;   
+        } 
+        
+ .pricing-table .details{
+     width:90%;
+     max-width: 500px;
+     text-align: center;
+     margin: 0 auto;
+     padding:40px 20px;   
+        }
+        
+.pricing-table .details h2{
+    font-size: 30px;  
+    margin-bottom: 10px;
+        }
+
+.pricing-table .details p{
+    font-size: 15px;
+        }
+        
+.pricing-table .grid{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    grid-gap:20px 0px;
+    padding: 20px;
+        }
+        
+.pricing-table .grid .box{
+    width: 250px;
+    border: 1px solid #eee;
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px 5px rgba(0,0,0,0.05);   
+        }
+        
+.pricing-table .grid .box . title{
+    font-size:16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color:#555;
+        }
+
+.pricing-table .grid .box .price{
+    margin-bottom: 20px;  
+    line-height: 3em;
+        } 
+        
+.pricing-table .grid .box .price b{ 
+    display: block;
+    font-size: 40px;
+    margin-bottom: -5px
+    
+        }
+        
+.pricing-table .grid .box .features{
+    color:#555;
+    padding: 8px 0px;
+    border-bottom: 1px solid rgba (0,0,0,0.2);
+        }
+    
+.pricing-table .grid .box .button button{
+    width: 100%;
+    margin:25px 0px 0px;
+    padding:10px;
+    background: #133E87;
+    color: white;
+    border-radius:5px;
+    outline: none;
+    font-weight: 600;
+    cursor:pointer;
+        }
+        
+.pricing-table .grid .box.standard{
+            transform: scale(1.1);
+            background: linear-gradient(to bottom, #133E87, #fff);
+        }
+        
+.pricing-table .grid .box.standard .title{
+           color: #eee;
+        }
+        
+.pricing-table .grid .box.standard .price{
+           color: #fff;
+        }
+        
+.pricing-table .grid .box.standard .features > *{
+           color: #fff;
+           border-bottom: 1px solid rgba(255,255,255,0.5);
+        }
+        
+        
+
+        
+                        /*Contact Page CSS*/       
+    
+.connect-container{
+        width 100%;
+        height: auto;
+        margin: 50px 50px;
+        }
+        
+.contact-box{
+    background:#ededeb;
+    display:flex;
+        }     
+        
+.contact-left{
+    flex-basis: 60%;
+    padding: 40px 60px;
+        }
+.contact-right{
+    flex-basis: 40%;
+    padding: 40px;
+    background:#608BC1;
+    color:white;
+        }
+h1{
+    margin-bottom: 10px;
+        }
+        
+.connect-container p{
+    margin-bottom: 40px;       
+        }
+        
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+        }
+        
+.input-row .input-group{
+    flex-basis: 45%;   
+        }
+        
+input{
+    width: 100%; 
+    border:none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom:5px;
+        }
+
+textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+        }
+
+label{
+    margin-bottom: 6px;
+    display: block;
+    color: #133E87;    
+        }
+    
+.connect-container .contact box .button-contact{
+        background: #133E87;
+        width 100px;
+        border:none;
+    }
+
+.contact-left h3{
+        color: black;
+        font-weight: 600;
+        margin-bottom: 30px;
+        }
+      
+        
+.contact-right h3{
+        color: black;
+        font-weight: 600;
+        margin-bottom: 30px;
+        }
+        
+tr td:first-child{
+      padding-right: 20px;
+        }
+
+tr td {
+    padding-top: 20px;
+        }    
+        
+
+.thanks header h1{
+   margin-top: 50px;
+   margin-left: 50px;
+   line-height: 1em;
+}
+        
+        
+
+                          /*Product Page CSS*/ 
+        
+.product{
+    background: #133E87;
+        }
+        
+        
+.product-container{
+     color:#F7F7F8;
+     padding: 5px;
+     margin-right: 2em;
+     font-size: 3em;  
+     height: 20vh;
+     width: 100%;
+        }  
+        
+.product-container h1{
+            margin-top: 70px;
+            text-align: center;
+        }
+        
+h3{
+    text-align: center;
+    font-size:30px;
+    margin: o;
+    padding-top: 10px;
+        }
+        
+a{
+    text-decoration: none;        
+        }     
+        
+.gallery{
+    display: flex;
+    flex-wrap:wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+        }       
+        
+.card {
+ width: 20%;
+    margin: 15px;
+    box-sizing: border-box;
+    float:left;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    padding-top: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transition:.4s;
+    background: #f2f2f2;
+        } 
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+        }       
+    
+
+}
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+
+
+/* Minimum width for laptops. */
+@media all and (min-width: 769px) {
+    
+
+    /*Home Page CSS*/
+        
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+nav{
+    height: 80px;
+    background:#ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem calc((100ww-1300px)/2);  
+}
+
+nav a{ 
+     color:#F7F7F8;
+     text-decoration: none;
+     background: #133E87;
+     padding: 3px;
+     margin: 3px;
+     display: inline-block;
+     width: 100px;
+     text-align: center;
+     border-radius: 8px;
+     margin-right: 2em;
+     font-size: .75em;
+}
+
+nav a:hover { 
+    background: #608BC1; 
+}
+
+
+.hero{
+    background: #CBDCEB;
+}
+
+.hero-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 85vh;
+    padding: 0rem calc((100ww-1300px)/2);  
+}
+
+.column-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color:#608BC1;
+    padding: 1em;  
+}
+
+
+.column-left h1{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.column-left p{
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    line-height: 1.5; 
+    color: black;
+}
+
+
+.column-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 2rem;  
+}   
+        
+.logo{
+    margin-left: 3em;
+            
+        }
+          
+.column {
+  width: 100%;
+  padding: 2em;
+  font-size: 1.3em;
+}
+
+
+}
+        
+.columnright{
+    display: flex;
+    justify-content: flex-end; 
+       
+        }   
+        
+.memorial{
+    background: #CBDCEB;
+}
+
+.memorial-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 70vh;
+    padding: 0rem calc((100ww-1300px)/2);  
+}
+  
+.baby{
+    max-width: 100%;
+    height: auto;
+}
+        
+
+
+
+
+
+
+
+
+/* Minimum width for desktop screens. */
+    @media all and (min-width: 1024px) {
+        
+        
+                             /*Home Page CSS*/
+        
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+nav{
+    height: 80px;
+    background:#ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem calc((100ww-1300px)/2);  
+}
+
+nav a{ 
+     color:#F7F7F8;
+     text-decoration: none;
+     background: #133E87;
+     padding: 5px;
+     margin: 5px;
+     display: inline-block;
+     width: 200px;
+     text-align: center;
+     border-radius: 8px;
+     margin-right: 2em;
+}
+
+nav a:hover { 
+    background: #608BC1; 
+}
+
+
+.hero{
+    background: #CBDCEB;
+}
+
+.hero-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 95vh;
+    padding: 0rem calc((100ww-1300px)/2);  
+}
+
+.column-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color:#608BC1;
+    padding: 10em;  
+}
+
+
+.column-left h1{
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    line-height: 1.5;
+}
+
+.column-left p{
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5; 
+    color: black;
+}
+
+
+.column-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 2rem;  
+}   
+        
+.logo{
+    margin-left: 10em;
+            
+        }
+
+          
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 3em;
+  font-size: 1.3em;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.columnright{
+    display: flex;
+    justify-content: flex-end; 
+       
+        }   
+        
+.Video{
+    background: #CBDCEB;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 104vh;
+    padding: 0rem calc((100ww-1300px)/2);  
+    }
+    
+.video-image{
+    padding: 2em;
+            
+        }
+
+        
+        
+        
+        
+        
+        
+
+
+    } /* closes 1024px+ */
